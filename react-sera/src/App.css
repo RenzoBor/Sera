@@ -10,6 +10,7 @@
   --colorSecundario: rgba(0, 0, 0, 0.497);
 
 }
+
 header{
   top: 0px;
   background-color: black;
@@ -18,6 +19,7 @@ header{
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 9999;
 }
 #header-wrapper{
   height: 90px;
@@ -80,9 +82,37 @@ nav{
 #banner{
   width: 100%;
   height: 80vh;
+  position: absolute;
+  left: 0px;
 }
 #banner-container{
   height: 80vh
+}
+#text-container{
+  display: flex;
+  position: relative;
+  top: 25%;
+  z-index: 100;
+  flex-direction: column;
+
+}
+.text-banner{
+  color:var(--colorPrimario);
+  z-index: 1000;
+  font-size: 4em;
+  font-weight: 550;
+}
+#text-container button{
+  background-color: var(--colorPrimario);
+  height: 50px;
+  width: 200px;
+  color:black;
+  border-radius: 20px;
+  position: relative;
+  left: 45%;
+  margin: 7px;
+  font-size: 20px;
+
 }
 h3{
   display: inline-block;
@@ -138,32 +168,7 @@ button{
 .cat-img{
   width: auto;
 }
-#mainRight{
-  width: 50vw;
-  height: 92vh;
-  overflow:hidden;
-}
-#mainRight img{
-  width: 100%;
-}
-#main{
-  background-color: var(--colorPrimario);
-  border-top: solid black 1px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px;
-}
-.galeria{
-  display: flex;
-}
-.producto{
-  width: 200px;
-  height: 200px;
-  margin: 10px;
-  border: 1px solid black;
-  box-shadow: inset;
-}
+
 footer{
   display: flex;
   flex-direction: column;
