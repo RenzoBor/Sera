@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 * {
   margin: 0px;
   padding: 0px;
@@ -10,7 +11,9 @@
   --colorSecundario: rgba(0, 0, 0, 0.497);
 
 }
-
+html{
+  scroll-behavior: smooth;
+}
 header{
   top: 0px;
   background-color: black;
@@ -50,7 +53,6 @@ li{
   height: 30px;
   list-style: none;
   color: white;
-  transition: background-color 250ms;
   font-size: 18px;
   text-decoration: none;
   border-radius: 5px;
@@ -58,10 +60,6 @@ li{
   align-items: center;
   justify-content: center;
   margin-left: 35px;
-}
-li:hover{
-  background-color: var(--colorSecundario);
-
 }
 h1{
   width: 150px;
@@ -132,16 +130,19 @@ p{
 #cat-container{
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 99%;
   padding: 20px;
-  margin: 0 10px;
+  margin: 0px 10px;
   flex-direction: row;
   height: 500px;
 }
 #cats{
   background-color:var(--colorPrimario);
+  padding: 18px 0px;
 }
+
 .cat-card{
+  position: relative;
   flex: 1;
   margin: 0 10px;
   background-color: #fff;
@@ -153,16 +154,42 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover
 
 }
 button{
-  width: 60px;
-  height: 25px;
-
+  z-index: 6000;
+  border: 0px;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--colorPrimario);
+  cursor: pointer;
 }
 #seg-card{
   background-image: url("assets/seguridad.png");
-  background-size: cover
+}
+#ind-card{
+  background-image: url("assets/empresas.jpeg");
+}
+#merch-card{
+  background-image: url("assets/merchandising.jpg");
+}
+
+.filter{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.filter:hover{
+  background-color: rgba(0, 0, 0, 0.1);
 
 }
 .cat-img{
@@ -193,7 +220,7 @@ footer h3{
 #footerLeft p{
   color: white;
   margin: 15px;
-
+  text-align: left;
 }
 #footerRight{
   display: flex;
