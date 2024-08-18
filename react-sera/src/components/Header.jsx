@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 import logoGibor from "../assets/LOGO_GIBOR.jpg"
 
 function Header() {
+ const [bClass, setBClass] = useState(false)
+ const toggleBurguer = () => {
+    setBClass(!bClass)
+ }
     return (
         <>
             <div id="header-wrapper"></div>

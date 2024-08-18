@@ -135,6 +135,7 @@ p{
   margin: 0px 10px;
   flex-direction: row;
   height: 500px;
+  gap: 15px;
 }
 #cats{
   background-color:var(--colorPrimario);
@@ -144,7 +145,6 @@ p{
 .cat-card{
   position: relative;
   flex: 1;
-  margin: 0 10px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -246,3 +246,15 @@ ul{
   border-radius: 100%;
 }
 #cat-section{background-color:var(--colorPrimario);}
+
+@media (max-width: 750px) {
+  #cat-container{
+    flex-direction: column;
+    height: 1200px;
+  }
+  
+}
+
+@media (max-width:1050px){
+  
+}
