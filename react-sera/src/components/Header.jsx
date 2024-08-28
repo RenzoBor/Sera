@@ -21,7 +21,7 @@ function Header() {
             <header>
 
                 <div id="header-left">
-                    <h1 onClick={toggleBurguer}>Cotexar</h1>
+                    <Link to='/' style={{display:"flex"}}><h1 onClick={toggleBurguer}>Cotexar</h1></Link>
                     <nav>
                         <ul>
                             <li><Link to="/">Inicio</Link></li>

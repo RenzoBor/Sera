@@ -6,13 +6,14 @@ import './App.css'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Construccion from './routes/Construccion.jsx'
+import Whatsapp from './components/Whatsapp.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <Header/>
+  <Whatsapp/>
     <Routes>
-      <Route path='/' element={<Home/>}>
+      <Route path='/' element={<Home/>}/>
       <Route path='construccion' element={<Construccion/>}/>
-      </Route>
     </Routes>
     <Footer/>
   </BrowserRouter>,

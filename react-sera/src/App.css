@@ -70,7 +70,7 @@ h1{
   font-size: 3em;
   display: flex;
   align-items: center;
-  cursor:default;
+  cursor:pointer;
   
 }
 nav{
@@ -256,8 +256,36 @@ ul{
   border-radius: 100%;
 }
 #cat-section{background-color:var(--colorPrimario);}
-
+#floating-wsp{
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 9999;
+}
+#construccion{
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(110, 108, 108);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#construccion img{
+  width: 250px;
+}
+#construccion span{
+  font-size: 1.3em;
+}
 @media (max-width: 750px) {
+  #floating-wsp{
+    width: 67px;
+    height: 67px;
+    right: 28px;
+    bottom: 28px;
+  }
   #cat-container{
     flex-direction: column;
     height: 1200px;
