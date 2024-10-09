@@ -6,19 +6,19 @@ function Categorias(){
         <section id="cats">
         <h2>Categorías</h2>
         <div id="cat-container">
-            <Link className="link" to="construccion">
+            <Link className="link" to="categoria/Seguridad industrial">
         <article id="seg-card" className="cat-card">
             <button>Seguridad Industrial</button>
             <div className="filter"></div>
         </article>
         </Link>
-        <Link className="link" to="construccion">
+        <Link className="link" to="categoria/Indumentaria para empresas">
         <article id="ind-card" className="cat-card">
             <button>Indumentaria para empresas</button>
             <div className="filter"></div>
         </article>
         </Link>
-        <Link className="link" to="construccion">
+        <Link className="link" to="categoria/Merchandising">
         <article id="merch-card" className="cat-card">
             <button>Merchandising</button>
             <div className="filter"></div>

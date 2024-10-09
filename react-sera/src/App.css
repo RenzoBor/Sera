@@ -279,6 +279,10 @@ ul{
 #construccion span{
   font-size: 1.3em;
 }
+#cat-section{
+  min-height: 500px;
+  background-color: var(--colorPrimario);
+}
 @media (max-width: 750px) {
   #floating-wsp{
     width: 67px;
@@ -315,6 +319,7 @@ ul{
     width: 80%;
   }
 }
+
 @media (max-width:960px){
   nav{
     display: none;
