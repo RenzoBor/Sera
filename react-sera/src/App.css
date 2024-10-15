@@ -283,6 +283,53 @@ ul{
   min-height: 500px;
   background-color: var(--colorPrimario);
 }
+#cat-main{
+  
+}
+
+/* Estilo general para el contenedor de la tarjeta */
+.card {
+  width: 300px; /* Ajusta el ancho de la tarjeta según tu diseño */
+  border: 1px solid #e0e0e0; /* Borde ligero */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para efecto de elevación */
+  overflow: hidden; /* Ocultar desbordes */
+  margin: 16px; /* Espaciado entre las tarjetas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Mueve ligeramente la tarjeta al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+}
+
+/* Imagen de la tarjeta */
+.card img {
+  width: 100%; /* Imagen se adapta al ancho de la tarjeta */
+  height: 200px; /* Fija la altura de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra sin deformarse */
+  border-bottom: 1px solid #e0e0e0; /* Línea divisoria entre imagen y contenido */
+}
+
+/* Contenido dentro de la tarjeta */
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+/*------------------------------------*/
 @media (max-width: 750px) {
   #floating-wsp{
     width: 67px;

@@ -10,7 +10,6 @@ function Header() {
  
  const toggleBurguer = () => {
     setBClass(!bClass)
-    console.log(screenWidth);
     
  }
 

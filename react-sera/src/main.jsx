@@ -8,8 +8,10 @@ import Footer from './components/Footer.jsx'
 import Construccion from './routes/Construccion.jsx'
 import Whatsapp from './components/Whatsapp.jsx'
 import Categoria from './routes/Categoria.jsx'
+import { ProductProvider } from './components/ProductProvider.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+  <ProductProvider>
   <Header/>
   <Whatsapp/>
     <Routes>
@@ -17,5 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='categoria/:cat' element={<Categoria/>}/>
     </Routes>
     <Footer/>
+    </ProductProvider>
   </BrowserRouter>,
 )
