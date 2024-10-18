@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import { useProductContext } from "../components/ProductProvider";
-import { Card } from "../components/Card";
+import  Card  from "../components/Card.jsx";
 function Categoria(){
     const products = useProductContext()
     let param = useParams();
