@@ -4,42 +4,21 @@ import Card from "./Card.jsx"
 
 export function Destacados(){
     const productos = useProductContext()
-    const [randomNum, setRandomNum] = useState(null)
     const [destacados, setDestacados] = useState(null)
     useEffect(() => {
-      for(let i = 0; i<=4 ; i++)console.log(Math.floor(Math.random()*productos.length)+1)
-      setDestacados( [{
-        id: 1,
-        nombre: "Bermuda de trabajo",
-        descripcion: "Descripción del producto 1",
-        imagen: "/imagenes/producto1.jpg"
-      },
-      {
-        id: 2,
-        nombre: "Birome",
-        descripcion: "Descripción del producto 2",
-        imagen: "/imagenes/producto2.jpg"
-      },
-      {
-        id: 3,
-        nombre: "Botín P91BR",
-        descripcion: "Descripción del producto 2",
-        imagen: "/imagenes/producto2.jpg"
-      },
-      {
-        id: 4,
-        nombre: "Buzo polar combinado",
-        precio: 200,
-        descripcion: "Descripción del producto 2",
-        imagen: "/imagenes/producto2.jpg"
-      },
-      {
-        id: 5,
-        nombre: "Buzo polar combinado",
-        precio: 200,
-        descripcion: "Descripción del producto 2",
-        imagen: "/imagenes/producto2.jpg"
-      }])
+      let randoms = []
+      let products = []
+      while(randoms.length < 6){
+        let num = Math.floor(Math.random()*productos.length)+1 // genero numero aleatorio entre 0 y el numero de productos
+        if(!randoms.includes(num))randoms.push(num)}           // logica para evitar repeticiones
+      productos.forEach(e => {
+        for(let i = 0; i < 6; i++){
+          if(e.id === randoms[i]){
+            products.push(e)
+          }
+        }
+      });
+      setDestacados(products)
     }, [])
     
     return(

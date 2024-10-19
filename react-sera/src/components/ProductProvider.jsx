@@ -11,145 +11,148 @@ export function ProductProvider({children}){ // al importar este componente todo
             id: 1,
             nombre: "Bermuda de trabajo",
             descripcion: "Descripción del producto 1",
-            imagen: "/imagenes/producto1.jpg"
+            imagen: "../../public/productos/bermuda-trabajo.webp",
+            categoria:""
           },
           {
             id: 2,
             nombre: "Birome",
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/boligrafo.jpg",
+            categoria:""
           },
           {
             id: 3,
             nombre: "Botín P91BR",
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/botin-p91br.jpg",
+            categoria:""
           },
           {
             id: 4,
             nombre: "Buzo polar combinado",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/Buzo Polar combinado_1444.jpg",
+            categoria:""
           },
           {
             id: 5,
             nombre: "Buzo de friza",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/buzo-friza.webp",
+            categoria:""
           },
           {
             id: 6,
             nombre: "Buzo polar Rust",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/buzo-polar-hombre-Rust.jpg",
+            categoria:""
           },
           {
             id: 7,
             nombre: "Camisa Oxford",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/camisa-oxford.png",
+            categoria:""
           },
           {
             id: 8,
             nombre: "Camisa de trabajo",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/camisa-trabajo.webp",
+            categoria:""
           },
           {
             id: 9,
             nombre: "Camisa de trabajo reflectiva",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/camisa-trabajo-reflectivo.webp",
+            categoria:""
           },
           {
             id: 10,
             nombre: "Camiseta de futbol",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/camiseta-futbol.jpg",
+            categoria:""
           },
           {
             id: 11,
             nombre: "Campera de egresado",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/campera-egresado.webp",
+            categoria:""
           },
           {
             id: 12,
             nombre: "Chaleco reflectivo",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/chaleco-reflectivo.jpg",
+            categoria:""
           },
           {
             id: 13,
             nombre: "Chomba Pique combinada",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/Chomba pique combinada.jpg",
+            categoria:""
           },
           {
             id: 14,
             nombre: "Chomba Pique",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/chomba-lisa-de-pique.jpg",
+            categoria:""
           },
           {
             id: 15,
             nombre: "Gorra 5 gajos",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/gorra-5-gajos.jpg",
+            categoria:""
           },
           {
             id: 16,
             nombre: "Gorra 6 gajos",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/gorra-6-gajos.webp",
+            categoria:""
           },
           {
             id: 17,
             nombre: "Jean azul",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/jean-azul.jpg",
+            categoria:""
           },
           {
             id: 18,
             nombre: "Pantalón gabardina",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/pantalon-gabardina-devestir.jpg",
+            categoria:""
           },
           {
             id: 19,
             nombre: "Pantalón cargo",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/pantalon-trabajo-cargo.jpg",
+            categoria:""
           },
           {
             id: 20,
             nombre: "Pantalón de trabajo",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/pantaon-trabajo.jpg",
+            categoria:""
           },
           {
             id: 21,
             nombre: "Stickers",
-            precio: 200,
             descripcion: "Descripción del producto 2",
-            imagen: "/imagenes/producto2.jpg"
+            imagen: "../../public/productos/sticker.jpg",
+            categoria:""
           }
     ]); // Intercambiable por useReducer
     return(
